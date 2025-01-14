@@ -1,5 +1,4 @@
-package giocosedie;
-
+package biba_sedie;
 class Posto
 
 {

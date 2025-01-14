@@ -1,4 +1,4 @@
-package giocosedie;
+package biba_sedie;
 
 class Display extends Thread
 
