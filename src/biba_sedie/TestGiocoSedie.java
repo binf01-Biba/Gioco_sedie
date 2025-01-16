@@ -1,21 +1,22 @@
 
 package biba_sedie;
 
+import java.util.Scanner;
 import java.util.logging.Logger;
 
-/**
- *
- * @author MC
- */
 public class TestGiocoSedie {
-    private final static int NUMSEDIE = 15;
     private static Logger logger = Logger.getLogger("GiocoSedie.TestGiocoSedie");
     
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Inserisci numero giocatori:");
+        int giocatori= scanner.nextInt();
+        int NUMSEDIE = giocatori - 1;
         Posto sedie[] = new Posto[NUMSEDIE];
+        
 
 	for (int k = 0; k < sedie.length; k++)
 		sedie[k] = new Posto();

@@ -6,12 +6,6 @@ import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-/**
- *
- * @author MC
- * @version 12/01/23
- */
-
 public class Scrittore implements Runnable{
 
     String nomeFile;
@@ -35,7 +29,7 @@ public class Scrittore implements Runnable{
                     new FileWriter(nomeFile, true));
             //2) scrivo nel buffer
             br.write(a);
-            br.write("\n\r");
+            br.write("\n");
             //3) svuoto il buffer e salvo nel file i dati
             br.flush();         
         } catch (IOException ex) {
